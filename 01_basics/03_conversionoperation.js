@@ -19,3 +19,31 @@ let stringNumber = String(someNumber)
 
 console.log(stringNumber)
 console.log(typeof stringNumber)
+
+
+// ******************OPERATIONS********
+
+let value=3
+let negValue = -value
+console.log(negValue);
+ 
+
+let str1 = "hello"
+let str2 = " hitesh"
+
+let str3 = str1+str2
+console.log(str3);
+
+console.log("1" + 2);   // output = 12
+console.log(1 + "2");   // output = 12
+console.log("1" +2+2);  // output = 122
+console.log(1 +2+"2");  // output = 32
+
+console.log(true);   // output true
+console.log(+true);  // output = 1
+// console.log(+true);  // output = error
+console.log(+"");   // output = 0
+
+
+// study prefix and postfix in mdn javascrpit 
+
