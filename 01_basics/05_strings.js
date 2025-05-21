@@ -20,3 +20,27 @@ console.log(gameName.indexOf('t'));   // kosna character konsi position pe aa ra
 const newString = gameName.substring(0,4)
 console.log(newString);
 
+const anotherString = gameName.slice(0,4)  // slice will also work same as substring but it will also work with negative index
+console.log(anotherString);  // output = hite
+console.log(gameName.slice(-2));  // output = hc
+console.log(gameName.slice(0, -2));  // output = hitesh-
+console.log(gameName.slice(2, -2));  // output = tesh-
+console.log(gameName.slice(-8, 4));  // output = ite
+
+const newStringOne = "   hitesh   "
+console.log(newStringOne);  
+console.log(newStringOne.trim());  // trim will remove the spaces from the start and end of the string
+
+// trim will not remove the spaces from the middle of the string
+// trim only works on white spaces and line terminators
+
+
+const url = "https://www.hitesh.com/hitesh%20choudhary"
+
+console.log(url.replace("%20", "-") ) // it will not change the original value of the string
+
+console.log(url.includes("hitesh"))  // it will check if the string is present in the url or not
+
+console.log(gameName.split("-"))  // it will split the string into an array of strings , here it is splitted on the basis of "-"
+console.log(gameName.split(""));  // it will split the string into an array of characters
+
