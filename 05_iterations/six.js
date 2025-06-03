@@ -3,26 +3,33 @@
 
 // const values = coding.forEach( (item) => {
 //     //console.log(item);
-//     return item
+//     return item                             // for each loop  will not return anything 
 // } )
 
-// console.log(values);
+// console.log(values);                       // undefined
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {
-//     return num > 4
+//     return num > 4                          // curly brackets use karlia hai toh fir hamko return likhna padega , bina return likhe nahi hoga run 
 // } )
 
-// const newNums = []
+// console.log(newNums);                     // [5, 6, 7, 8, 9, 10]
+// const newNums = myNums.filter( (num) => num > 4 ) // arrow function mein agar sirf ek hi line hai toh curly brackets nahi lagate
 
+
+
+// now same thing in foreach loop 
+
+
+// const newNums = [] 
 // myNums.forEach( (num) => {
 //     if (num > 4) {
 //         newNums.push(num)
 //     }
 // } )
 
-// console.log(newNums);
+// console.log(newNums);                // [5, 6, 7, 8, 9, 10]
 
 
 const books = [
@@ -38,8 +45,10 @@ const books = [
   ];
 
   let userBooks = books.filter( (bk) => bk.genre === 'History')
+   
+  // console.log(userBooks);         // [ { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 }, { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 } ]
 
   userBooks = books.filter( (bk) => { 
     return bk.publish >= 1995 && bk.genre === "History"
 })
-  console.log(userBooks);
+  console.log(userBooks);                                     // [ { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 } ]
